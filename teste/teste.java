@@ -13,7 +13,7 @@ class Calcular{
      //processo
   soma = x + y;
   //print
-  System.out.print(soma); 
+  System.out.print("O valor total será "+soma); 
   ler.close();
   
   }
