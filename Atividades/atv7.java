@@ -8,7 +8,8 @@ public class atv7 {
 public static void main(String[] args) {
     
 Scanner ler = new Scanner(System.in);
-String;
+String nome;
+int n1, n2, n3;
 
 System.out.printf("Escreva o primeiro valor: \n");
 x = ler.nextInt();
