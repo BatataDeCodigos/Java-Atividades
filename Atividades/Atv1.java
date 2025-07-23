@@ -7,16 +7,15 @@ public class Atv1 {
 public static void main(String[] args) {
     
 Scanner ler = new Scanner(System.in);
-int x, y, soma; 
+String nome;
+int idade;
 
-System.out.printf("Escreva o primeiro valor: \n");
-x = ler.nextInt();
-System.out.printf("Escreva o segundo valor: \n");
-y = ler.nextInt();
+System.out.printf("Escreva o seu nome: \n");
+nome = ler.next();
+System.out.printf("Escreva a sua idade: \n");
+idade = ler.nextInt();
 
-soma = x + y;
-
-System.out.print("O valor somado será "+soma+". <3");
+System.out.print("Nome do usuário: "+nome+". Sua idade é: "+idade+" <3");
 ler.close();
 
 }
