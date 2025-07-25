@@ -9,18 +9,16 @@ public class atv7 {
 public static void main(String[] args) {
     
 Scanner ler = new Scanner(System.in);
-@SuppressWarnings("unused")   
-int nome;
-@SuppressWarnings("unused")
+
+String nome;
 int n2;
-@SuppressWarnings("unused")
 int n3;
-@SuppressWarnings("unused")
 int n4;
+int media;
 
 
-System.out.print("Escreva o seu nome: \n");
-nome = ler.nextInt();
+System.out.printf("Escreva o seu nome: \n");
+nome = ler.nextLine();
 System.out.printf("Escreva o primeiro valor: \n");
 n2 = ler.nextInt();
 System.out.printf("Escreva o segundo valor: \n");
@@ -28,10 +26,11 @@ n3 = ler.nextInt();
 System.out.printf("Escreva o segundo valor: \n");
 n4 = ler.nextInt();
 
+media = (int) ((n2 + n3 + n4) / 3.0);
 
-System.out.print("Seu nome é"+nome+". E suas notas são:"+n2+", "+n3+", "+n4+". <3");
+System.out.print("Seu nome é "+nome+". E a média das suas notas são: "+media+". <3");
 ler.close();
 
 }
-
 }
+
