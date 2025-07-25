@@ -6,17 +6,17 @@ public class Atv1 {
     
 public static void main(String[] args) {
     
-Scanner ler = new Scanner(System.in);
-String nome;
-int idade;
-
-System.out.printf("Escreva o seu nome: \n");
-nome = ler.next();
-System.out.printf("Escreva a sua idade: \n");
-idade = ler.nextInt();
-
-System.out.print("Nome do usuário: "+nome+". Sua idade é: "+idade+" <3");
-ler.close();
+    try (Scanner ler = new Scanner(System.in)) {
+        String nome;
+        int idade;
+        
+        System.out.printf("Escreva o seu nome: \n");
+        nome = ler.next();
+        System.out.printf("Escreva a sua idade: \n");
+        idade = ler.nextInt();
+        
+        System.out.print("Nome do usuário: "+nome+". Sua idade é: "+idade+" <3");
+    }
 
 }
 
