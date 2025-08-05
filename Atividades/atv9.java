@@ -9,35 +9,58 @@ public class atv9 {
      * @param args
      */
     public static void main(String[] args){
-        Scanner ler = new Scanner(System.in);
+    Scanner ler = new Scanner(System.in);
 
-        System.out.printf("Digite o número do mês atual (1-12): \n");
-        int numeromes = ler.nextInt();
-        String nomemes;
+    System.out.printf("Digite o número do mês atual (1-12): \n");
+    int numeromes = ler.nextInt();
+    String nomemes;
 
 
         switch (numeromes) {
-            case 1 -> nomemes = "Janeiro";
-            case 2 -> nomemes = "Fevereiro";
-            case 3 -> nomemes = "Março";
-            case 4 -> nomemes = "Abril";
-            case 5 -> nomemes = "Maio";
-            case 6 -> nomemes = "Junho";
-            case 7 -> nomemes = "Julho";
-            case 8 -> nomemes = "Agosto";
-            case 9 -> nomemes = "Setembro";
-            case 10 -> nomemes = "Outubro";
-            case 11 -> nomemes = "Novembro";
-            case 12 -> nomemes = "Dezembro";
-            default -> {
+            case 1:
+            nomemes = "Janeiro";
+            break;
+            case 2:
+            nomemes = "Fevereiro";
+            break;
+            case 3:
+            nomemes = "Março";
+            break;
+            case 4:
+            nomemes = "Abril";
+            break;
+            case 5:
+            nomemes = "Maio";
+            break;
+            case 6:
+            nomemes = "Junho";
+            break;
+            case 7:
+            nomemes = "Julho";
+            break;
+            case 8:
+            nomemes = "Agosto";
+            break;
+            case 9:
+            nomemes = "Setembro";
+            break;
+            case 10:
+            nomemes = "Outubro";
+            break;
+            case 11:
+            nomemes = "Novembro";
+            break;
+            case 12:
+            nomemes = "Dezembro";
+            break;
+            default:
                 nomemes = "Digite um número que tenha em meses!";
                 throw new AssertionError();
             }
+
+            System.out.println("O número do mês: "+numeromes+", e seu nome é: "+nomemes+". :)");
+            
         }
-
-        System.out.println("O número do mês: "+numeromes+", e seu nome é: "+nomemes+". :)");
-
-
+        
     }
     
-}

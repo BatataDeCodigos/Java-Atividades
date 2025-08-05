@@ -20,13 +20,20 @@ System.out.printf("Escreva o seu operador matemático: \n");
 oper = ler.next();
 
 switch (oper) {
-    case "+" -> value = x + y;
+    case "+":
+     value = x + y;
+     break;
 
-    case "-" -> value =  x - y;
+    case "-":
+     value =  x - y;
+     break;
 
-    case "*" -> value = x * y;
+    case "*":
+     value = x * y;
+     break;
 
-    case "/" -> {
+    case "/":
+     {
         if (y !=0) {
             value = x / y;
         }
@@ -34,14 +41,16 @@ switch (oper) {
             
             System.err.println("Erro! Divisão por zero não pode ser feita. Utilize outro número!");
             
-        }   }
+        } 
+            break;
+    }
 
-        default -> {
+        default: {
             System.err.println("Utilize operadores como: +(mais), -(menos), *(multiplicação), /(divisão)!");
             
             return;
+            
         }
-
 }
 
 System.out.printf("O valor será: %d \n", value);
