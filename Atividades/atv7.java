@@ -23,7 +23,7 @@ System.out.printf("Escreva o primeiro valor: \n");
 n2 = ler.nextInt();
 System.out.printf("Escreva o segundo valor: \n");
 n3 = ler.nextInt();
-System.out.printf("Escreva o segundo valor: \n");
+System.out.printf("Escreva o terceiro valor: \n");
 n4 = ler.nextInt();
 
 media = (int) ((n2 + n3 + n4) / 3.0);
