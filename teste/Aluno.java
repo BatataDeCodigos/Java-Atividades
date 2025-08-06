@@ -69,7 +69,7 @@ this.nota = nota;
 //instanciando o objeto
 public static void main(String[] args){
 
-    Aluno aluno1 = new Aluno("João","18", "7.9");
+    Aluno aluno1 = new Aluno("João",18, "7.9");
     aluno1.apresentar();
     aluno1.verificarAprovacao();
     aluno1.setNome("Jurandir");
@@ -77,6 +77,11 @@ public static void main(String[] args){
     aluno1.verificarAprovacao();
 
 
+}
+
+private void verificarAprovacao() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'verificarAprovacao'");
 }
 
 }
